@@ -1,0 +1,25 @@
+{
+  "name": "HometaskM6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "protractor": "^7.0.0",
+    "webdriver-manager": "^12.1.8"
+  },
+  "devDependencies": {
+    "mocha": "^9.0.1"
+  },
+  "scripts": {
+    "test": "mocha",
+    "e2e": "protractor task2/config/conf.js",
+    "postinstall": "webdriver-manager update --versions.standalone=3.10.0 --gecko=false",
+    "e2e:update": "webdriver-manager update",
+    "e2e:generate-report": "node Lesson_8_Cucumber/test/e2e/utils/reporter.js",
+    "e2e:start-server": "webdriver-manager start --versions.standalone=3.10.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
