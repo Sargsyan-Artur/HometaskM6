@@ -10,11 +10,11 @@ exports.config = {
         timeout: 40000
     },
 
-    // onComplete : function () { DOESNT WORK
-    //     browser.close();
-    // },
+    onComplete : async function () {
+        await browser.quit();
+    },
 
-    // onPrepare: function () {
-    //     browser.waitForAngularEnabled(false); DOESNT WORK
-    // }
+    onPrepare: function () {
+        browser.waitForAngularEnabled(false);
+    }
 };
